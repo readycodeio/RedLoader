@@ -12,6 +12,7 @@ macro_rules! runtime {
     };
 }
 
+#[allow(static_mut_refs)]
 pub fn get_runtime() -> Result<&'static FerrexRuntime, DynErr> {
     unsafe {
         if RUNTIME.is_none() {

@@ -43,10 +43,10 @@ namespace RedLoader.Utils
         public static string SupportModuleDirectory => Path.Combine(DependenciesDirectory, "SupportModules");
         public static string CompatibilityLayerDirectory => Path.Combine(DependenciesDirectory, "CompatibilityLayers");
         public static string Il2CppAssemblyGeneratorDirectory => Path.Combine(DependenciesDirectory, "Il2CppAssemblyGenerator");
-        public static string ModsDirectory => Path.Combine(GameRootDirectory, "Mods");
+        public static string ModsDirectory => Path.Combine(LoaderDirectory, "Mods");
         public static string PluginsDirectory => Path.Combine(LoaderDirectory, "Plugins");
-        public static string LibsDirectory => Path.Combine(GameRootDirectory, "Libs");
-        public static string UserDataDirectory => Path.Combine(GameRootDirectory, "UserData");
+        public static string LibsDirectory => Path.Combine(LoaderDirectory, "Libs");
+        public static string UserDataDirectory => Path.Combine(LoaderDirectory, "UserData");
         public static string OurRuntimeDirectory => Path.Combine(LoaderDirectory, OurRuntimeName);
 
         /// <summary>
